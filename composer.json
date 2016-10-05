@@ -1,0 +1,13 @@
+{
+  "name": "bea/critical-css",
+  "description": "Load CriticalCSS files for WP Themes",
+  "minimum-stability": "stable",
+  "license": "GPL-2.0",
+  "authors": [
+    {
+      "name": "Romain DORR",
+      "email": "rdorr@beapi.fr"
+    }
+  ],
+  "type" : "wordpress-muplugin"
+}
