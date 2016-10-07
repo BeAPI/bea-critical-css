@@ -134,7 +134,7 @@ class BEA_Critical_CSS {
 	 * @return bool|string
 	 */
 	public static function critical_css_file( $url ) {
-		$config = locate_template( 'assets/css/critical/conf/bea-critical-conf.json' );
+		$config = locate_template( apply_filters( 'bea-critical-css/config_file', 'assets/css/critical/conf/bea-critical-conf.json' ) );
 
 		if ( ! $config ) {
 			return false;
@@ -163,7 +163,7 @@ class BEA_Critical_CSS {
 		$viewport = ( wp_is_mobile() ) ? 'mobile' : 'desktop';
 		$filename = $name . '-' . $viewport . '.css';
 
-		$file = locate_template( 'assets/css/critical/' . $filename );
+		$file = locate_template( apply_filters( 'bea-critical-css/folder', 'assets/css/critical/' ) . $filename );
 
 		if ( empty( $file ) ) {
 			return false;
