@@ -9,5 +9,8 @@
       "email": "rdorr@beapi.fr"
     }
   ],
+  "require" : {
+    "composer/installers" : "~1.0"
+  },
   "type" : "wordpress-muplugin"
 }
