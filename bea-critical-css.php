@@ -3,7 +3,7 @@
  Plugin Name:  Critical CSS
  Description:  Load CriticalCSS file in theme
  Plugin URI:   http://www.beapi.fr
- Version:      1.0.0
+ Version:      1.0.1
  Author:       BE API Technical team
  Author URI:   http://www.beapi.fr
 
