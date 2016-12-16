@@ -50,15 +50,15 @@ class BEA_Critical_CSS {
 	 * @return void|bool
 	 */
 	public function critical_css() {
+		global $wp;
 
-		$object = get_queried_object();
-		$url = get_permalink( $object->ID );
+		$current_url = home_url( add_query_arg( [], $wp->request ) );
 
-		if ( empty( $url ) ) {
+		if ( empty( $current_url ) ) {
 			return false;
 		}
 
-		$critical_css = self::critical_css_file( $url );
+		$critical_css = self::critical_css_file( $current_url );
 
 		if ( empty( $critical_css ) ) {
 			return false;
