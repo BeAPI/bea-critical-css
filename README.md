@@ -23,6 +23,10 @@ Add theme support in theme with the list of stylesheets to connect with this mu-
 
 ## Changelog ##
 
+### 1.0.3
+* 05 July 2018
+* Fix a bug with end slash URL, ignore this char VS json
+
 ### 1.0.0
 * 05 October 2016
 * Initial
